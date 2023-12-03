@@ -1,0 +1,479 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Rubik;
+    scroll-behavior: smooth;
+    transition: .2s;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: Racing;
+    src: url(../media/fonts/RacingSansOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url(../media/fonts/Rubik-VariableFont_wght.ttf);
+}
+
+::selection {
+    color: #FFC845;
+}
+
+// БАННЕР И ХЕАДЕР
+
+header {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+
+    h1 {
+        font-family: Racing;
+        font-weight: 100;
+        margin: 62vh 0 0 0;
+        font-size: 8em;
+        color: #FFC845;
+    }
+}
+
+.header {
+    margin: 15px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__text {
+        display: flex;
+        font-size: 1.1em;
+        color: #fff;
+
+        a {
+            color: #fff;
+            margin: 0 0 0 40px;
+        }
+        a:hover {
+            color: #FFC845;
+        }
+    }
+
+    &__button {
+        font-size: 14px;
+        padding: 0 0 0 200px;
+
+        span {
+            font-weight: bold;
+        }
+
+        a {
+            color: black;
+            background-color: #FFC845;
+            padding: 15px 32px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-position: center;
+    object-fit: cover;
+}
+
+// О КОМПАНИИ (MASERATTI)
+
+.about {
+    padding: 27vh 0 27vh 0;
+
+    h2 {
+        color: #FFC845;
+        font-family: Racing;
+        font-weight: 400;
+        font-size: 4em;
+    }
+
+    &__text {
+        padding: 45px 100px 0;
+        font-size: 1.98em;
+        letter-spacing: -2px;
+
+        p {
+            width: 1200px;
+            font-weight: 400;
+            line-height: 62px;
+        }
+    }
+}
+
+// АВТОМОБИЛИ - Модельный ряд
+
+.cars {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.021), rgba(0, 0, 0, 0.027)),
+        url(../media/img/image.png);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 510px;
+    padding: 7vh 0 30vh 0;
+    margin: 0 0 55vh 0;
+
+    &__title {
+        margin: 0 0 0 400px;
+        h3 {
+            color: #FFC845;
+            font-weight: 350;
+            margin: 0 0 0 10px;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-style: italic;
+            font-size: 3em;
+            font-weight: 500;
+        }
+
+        span {
+            font-family: Racing;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+
+    &__line {
+        background-color: #fff;
+        width: 170px;
+        height: 3px;
+        margin: 75px 0 20px 0;
+    }
+
+    &__subtitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 12px 0;
+
+        p {
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            font-weight: 100;
+        }
+    }
+
+    &__model {
+        display: flex;
+        justify-content: end;
+    }
+
+    &__info {
+        color: #000;
+        max-width: 800px;
+        margin: 0 auto;
+
+        h4 {
+            font-size: 2.7em;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 1.05em;
+            margin: 20px 0;
+        }
+    }
+
+    .info__text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info__button {
+        display: flex;
+        flex-direction: row-reverse;
+        position: absolute;
+        left: 46%;
+        top: 134%;
+        font-size: 14px;
+        padding: 0 0 0 200px;
+
+        span {
+            font-weight: bold;
+        }
+
+        a {
+            color: black;
+            background-color: #FFC845;
+            padding: 15px 32px;
+            text-transform: uppercase;
+        }
+    }
+
+    .arrow__left {
+        position: absolute;
+        top: 93%;
+        left: 8%;
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        background-color: #fff;
+        box-shadow: 1px 0px 20px 0px rgba(0, 0, 0, 0.30);
+
+        img {
+            width: 20px;
+            position: absolute;
+            right: 36%;
+            top: 26%;
+        }
+    }
+
+    .arrow__right {
+        position: absolute;
+        top: 93%;
+        right: 8%;
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        background-color: #fff;
+        box-shadow: 1px 0px 20px 0px rgba(0, 0, 0, 0.30);
+
+        img {
+            width: 20px;
+            position: absolute;
+            left: 36%;
+            top: 26%;
+        }
+    }
+}
+
+// ПОЧЕМУ МЫ (Преимущества - фишки)
+
+.supremacy {
+    padding: 0 0 20vh 0;
+
+    h2 {
+        color: #FFC845;
+        font-style: italic;
+        font-size: 3em;
+        font-weight: 500;
+        margin: 120px 0;
+    }
+
+    span {
+        font-family: Racing;
+        font-weight: 400;
+    }
+
+    &__card {
+        display: flex;
+
+        img {
+            width: 500px;
+            height: 300px;
+        }
+
+        .supremacy__text {
+            display: flex;
+            flex-direction: column;
+            margin: 0 60px;
+            justify-content: center;
+            line-height: 35px;
+
+            h3 {
+                color: #FFC845;
+                font-weight: 400;
+                font-size: 35px;
+            }
+
+            p {
+                max-width: 500px;
+                font-size: 28px;
+            }
+        }
+    }
+
+    &__card-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: 23vh 120px;
+
+        img {
+            width: 500px;
+            height: 300px;
+            margin-left: 35px;
+        }
+
+        .supremacy__text {
+            display: flex;
+            flex-direction: column;
+            margin: 0 20px;
+            text-align: right;
+            line-height: 40px;
+
+            h3 {
+                color: #FFC845;
+                font-weight: 400;
+                font-size: 35px;
+            }
+
+            p {
+                max-width: 500px;
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+
+.subscribe {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../media/img/subscribe.png);
+    background-size: cover;
+    background-position: center;
+    padding: 130px 0 130px 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-size: 5.5em;
+        text-align: center;
+        font-weight: 400;
+        margin: 0 0 50px 0;
+    }
+
+    span {
+        font-weight: 400;
+        font-family: Racing;
+        color: #FFC845;
+    }
+
+    &__form {
+        width: 663px;
+        height: 369px;
+        flex-shrink: 0;
+        border-radius: 44px;
+        background: rgba(255, 200, 69, 0.38);
+        backdrop-filter: blur(7px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        .input {
+            width: 436px;
+            height: 69px;
+            border-color: transparent;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.32);
+            font-size: 1.5em;
+            padding: 5px 15px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                color: #FFFFFF69;
+            }
+        }
+
+        button {
+            width: 238px;
+            margin: 20px 0;
+            height: 60px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.32);
+            border-color: transparent;
+            color: #fff;
+            font-size: 1.8em;
+            font-weight: 400;
+            gap: 1px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            box-shadow: 0px 0px 20px -18px;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+    }
+}
+
+footer {
+    padding: 70px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        margin: 0 0 40px 0;
+    }
+
+    .Bline {
+        margin: 0 0 50px 0;
+        width: 1400px;
+        height: 3px;
+        background: #000;
+    }
+
+    .footer {
+        a {
+            color: #000;
+            margin: 50px;
+        }
+
+        p {
+            margin: 50px;
+        }
+    }
+
+    .footer__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            font-weight: bold;
+        }
+        a {
+            color: black;
+            background-color: #FFC845;
+            padding: 15px 32px;
+            text-transform: uppercase;
+        }
+    }
+}
+.ToUp { 
+    position: fixed; 
+    width: 50px; 
+    height: 50px; 
+    border-radius: 100px; 
+    background-color: #FFC845; 
+    right: 30px; 
+    bottom: 30px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.192); 
+    color: #fff;
+    font-size: 2.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
